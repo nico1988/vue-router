@@ -9,6 +9,7 @@ const app = express()
 app.use(
   webpackDevMiddleware(webpack(WebpackConfig), {
     publicPath: '/__build__/',
+    devtool: 'source-map',
     stats: {
       colors: true,
       chunks: false
